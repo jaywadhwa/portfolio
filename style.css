@@ -1,0 +1,205 @@
+body {
+    font-family: Poppins;
+}
+
+.m-t-30px {
+    margin-top: 40px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.container {
+    max-width: 1224px;
+}
+
+.container-full {
+    max-width: 1824px;
+}
+
+.header {
+    /* height: 60px; */
+    padding: 15px 25px 15px 20px;
+    text-decoration: none;
+}
+
+.header:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.header .logo {
+    font-size: 30px;
+    color: black;
+    font-weight: bold;
+    text-align: left;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-style: black;
+}
+
+ul.social-media-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul.social-media-list li {
+    display: inline-block;
+}
+
+ul.social-media-list img {
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #d4d4d4;
+    width: 36px;
+    height: 36px;
+}
+
+.jumbo {
+    text-align: center;
+}
+
+.jumbo h1 {
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.tech-slider>div {
+    text-align: center;
+}
+
+.card {
+    height: 150px;
+}
+
+.card img {
+    height: auto;
+    width: auto;
+}
+
+.tech-projects>div {
+    padding: 10px;
+    width: 100%;
+    /* background-color: #f3f3f3; */
+}
+
+.tech-projects .content {
+    max-height: 460px;
+    overflow: auto;
+}
+
+.tech-projects img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.tech-projects .project-image {
+    position: relative;
+    max-height: 420px;
+    overflow: hidden;
+}
+
+.project-image:hover {
+    opacity: 0.7;
+}
+
+#tech-projects-main {
+    padding: 18px;
+    padding-bottom: 0;
+    border: 1px solid #d6d6d6;
+}
+
+#open-projects{
+    padding: 18px;
+    padding-bottom: 0;
+    border: 1px solid #d6d6d6;
+    position: relative;
+}
+
+#open-projects-controls .prev,#open-projects-controls .next {
+    cursor: pointer;
+    font-size: 37px;
+    border: 1px solid #dedede;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+#open-projects-controls .prev {
+    position: absolute;
+    left: -25px;
+    top: 30%;
+}
+#open-projects-controls .next {
+    position: absolute;
+    right: -25px;
+    top: 30%;
+}
+
+#tech-projects-controls, #tech-projects-thumbnails {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#tech-projects-controls>li, #tech-projects-thumbnails>li {
+    display: inline-block;
+}
+
+#tech-projects-thumbnails {
+    white-space:nowrap;
+    overflow: auto;
+}
+
+#tech-projects-thumbnails>li {
+    margin-right: 10px;
+}
+
+#footer {
+    background-color: #dcdcdc;
+    height: 60px;
+    line-height: 50px;
+    text-align: center;
+    width: 100%;
+}
+
+.hide-small-device {
+    display: none;
+}
+
+.hide-xsmall-device {
+    display: none;
+}
+
+.medium-device {
+    display: none;
+}
+
+.disabled {
+    pointer-events: none;
+}
+
+
+@media (min-width: 769px) {
+    .jumbo {
+        position: absolute;
+        top: -50px
+    }
+    #header-wrapper {
+        background: linear-gradient(to top, rgba(255, 255, 255, 225), rgba(255, 255, 255, 0.6)), url("http://localhost/wordpress/wp-content/uploads/2019/07/accounting-close-up-computation-1418347.jpg");
+    }
+    #main .jumbo-main {
+        height: 150px;
+    }
+    .tech-projects>div {
+        height: 480px;
+    }
+    .hide-small-device {
+        display: block;
+    }
+    #tech-projects-thumbnails {
+        text-align: right;
+    }
+}

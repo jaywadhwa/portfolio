@@ -67,6 +67,10 @@ ul.social-media-list img {
     margin-bottom: 0;
 }
 
+#tech-slider .tns-outer > button {
+    display: none;
+}
+
 .tech-slider>div {
     text-align: center;
 }

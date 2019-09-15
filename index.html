@@ -62,7 +62,7 @@
             </div>
         </div>
 
-        <div class="row m-t-30px">
+        <div id="tech-slider" class="row m-t-30px">
             <div class="tech-slider">
                 <div>
                     <div class="card">
@@ -265,29 +265,30 @@
                 container: ".tech-slider",
                 controls: false,
                 items: 1,
-                loop: true,
+                loop: false,
                 nav: false,
                 preventScrollOnTouch: 'auto',
+                autoplayButton: false,
                 responsive: {
                     320: {
                         items: 1,
                         autoplay: true,
-                        autoplayTimeout: 1200
+                        autoplayTimeout: 2200
                     },
                     480: {
                         items: 2,
                         autoplay: true,
-                        autoplayTimeout: 1200
+                        autoplayTimeout: 2200
                     },
                     767: {
                         items: 4,
                         autoplay: true,
-                        autoplayTimeout: 1200
+                        autoplayTimeout: 2200
                     },
                     991: {
                         items: 5,
                         autoplay: true,
-                        autoplayTimeout: 1200
+                        autoplayTimeout: 2200
                     },
                     1200: {
                         items: 7

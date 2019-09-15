@@ -313,21 +313,16 @@
                 controlsContainer: "#open-projects-controls"
             });
 
-            var lightbox = GLightbox({
-                selector: "tech-projects1"
-            });
-
-            var lightbox2 = GLightbox({
-                selector: "tech-projects2"
-            });
-            
-            var lightbox3 = GLightbox({
-                selector: "tech-projects3"
-            });
-
-            var lightbox4 = GLightbox({
-                selector: "tech-projects4"
-            });
+            var numLightBox = 4;
+            for (var i = 1; i <= numLightBox; i++) {
+                GLightbox({
+                    selector: "tech-projects" + i,
+                    svg: {
+                        prev: "<span style=\"font-size:54px;color:#fff;vertical-align:bottom\"><</span>",
+                        next: "<span style=\"font-size:54px;color:#fff;vertical-align:bottom\">></span>"
+                    }
+                });
+            }
 
             var techProjThumbs = document
                 .querySelector("#tech-projects-thumbnails")

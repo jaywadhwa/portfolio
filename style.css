@@ -190,6 +190,11 @@ ul.social-media-list img {
     pointer-events: none;
 }
 
+#tech-projects-thumbnails .tns-nav-active button {
+    color: #FFF;
+    background-color: #1EAEDB;
+}
+
 
 @media (min-width: 769px) {
     .jumbo {

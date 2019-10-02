@@ -129,7 +129,7 @@
                 <div class="nine columns hide-small-device">
                     <div class="row">
                         <ul class="thumbnails" id="tech-projects-thumbnails">
-                            <li><button class="button-primary">Social Site</button></li>
+                            <li><button>Social Site</button></li>
                             <li><button>Chat System</button></li>
                             <li><button>RESTful Backend</button></li>
                             <li><button>eCommerce</button></li>
@@ -326,28 +326,6 @@
                 });
             }
 
-            var techProjThumbs = document
-                .querySelector("#tech-projects-thumbnails")
-                .querySelectorAll("button");
-
-            var lastActiveBtn = techProjThumbs.item(0);
-
-            for (var prop in techProjThumbs) {
-                if (techProjThumbs.hasOwnProperty(prop)) {
-
-                    techProjThumbs[prop].addEventListener("click", function(e) {
-                        if(!this.classList.contains("button-primary"))
-                            this.classList.add("button-primary");
-
-                        if(this !== lastActiveBtn)
-                            lastActiveBtn.classList.remove("button-primary");
-
-                        lastActiveBtn = this;
-                    });
-
-                } 
-            }
-            
         })();
     </script>
 </body>
